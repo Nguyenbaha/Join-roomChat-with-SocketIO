@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Freetuts.net</title>
+</head>
+
+<body>
+    <button id="joinRoom">Vào phòng</button>
+    <button id="leaveRoom">Rời phòng</button>
+    <div id="notification"></div>
+</body>
+<!-- Thêm thư viện socket.io mà server cung cấp -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    //  khởi tạo kết nối: 
+    var socket = io('/ROOM_IN_SOCKET');
+    $('#joinRoom').click(function())
+</script>
+
+</html>
